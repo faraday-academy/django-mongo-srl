@@ -27,6 +27,17 @@ argon2 = ["argon2-cffi (>=16.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-filter"
+version = "2.4.0"
+description = "Django-filter is a reusable Django application for allowing users to filter querysets dynamically."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+Django = ">=2.2"
+
+[[package]]
 name = "djangorestframework"
 version = "3.12.2"
 description = "Web APIs for Django, made easy."
@@ -52,6 +63,18 @@ sqlparse = "0.2.4"
 
 [package.extras]
 json = ["jsonfield (>=2.0.2)", "django-jsoneditor (>=0.0.12)"]
+
+[[package]]
+name = "drf-nested-routers"
+version = "0.92.5"
+description = "Nested resources for the Django Rest Framework"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+Django = ">=1.11"
+djangorestframework = ">=3.6.0"
 
 [[package]]
 name = "pymongo"
@@ -89,8 +112,8 @@ python-versions = "*"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.6"
-content-hash = "b5864c674cc4ed9d904f88ec12ee95d82b7d420bcc6e38f8458244c2ca13340e"
+python-versions = "3.7.9"
+content-hash = "567d04a78919652e232ec0953671bb43e3a326a3f89541f6fe4c43d369f2debd"
 
 [metadata.files]
 asgiref = [
@@ -101,11 +124,19 @@ django = [
     {file = "Django-3.0.5-py3-none-any.whl", hash = "sha256:642d8eceab321ca743ae71e0f985ff8fdca59f07aab3a9fb362c617d23e33a76"},
     {file = "Django-3.0.5.tar.gz", hash = "sha256:d4666c2edefa38c5ede0ec1655424c56dc47ceb04b6d8d62a7eac09db89545c1"},
 ]
+django-filter = [
+    {file = "django-filter-2.4.0.tar.gz", hash = "sha256:84e9d5bb93f237e451db814ed422a3a625751cbc9968b484ecc74964a8696b06"},
+    {file = "django_filter-2.4.0-py3-none-any.whl", hash = "sha256:e00d32cebdb3d54273c48f4f878f898dced8d5dfaad009438fe61ebdf535ace1"},
+]
 djangorestframework = [
     {file = "djangorestframework-3.12.2-py3-none-any.whl", hash = "sha256:0209bafcb7b5010fdfec784034f059d512256424de2a0f084cb82b096d6dd6a7"},
 ]
 djongo = [
     {file = "djongo-1.3.3.tar.gz", hash = "sha256:5a9afcbfa32439d8e254f435cd1e3dd0c34e1690fc3aa8a1138267605ea4e329"},
+]
+drf-nested-routers = [
+    {file = "drf-nested-routers-0.92.5.tar.gz", hash = "sha256:9d6a326333e9b16549e63b893c27075d98bbc217cd05fb10bbfa770d728d3f66"},
+    {file = "drf_nested_routers-0.92.5-py2.py3-none-any.whl", hash = "sha256:995b831be036911e330a86b7129dc6589de62f2a53d72067e7ce2b4a90f28c35"},
 ]
 pymongo = [
     {file = "pymongo-3.11.2-cp27-cp27m-macosx_10_14_intel.whl", hash = "sha256:9be785bd4e1ba0148fb00ca84e4dbfbd1c74df3af3a648559adc60b0782f34de"},
